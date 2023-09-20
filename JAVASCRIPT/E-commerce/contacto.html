@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Ecommerce - Omega</title>
+        <link rel="stylesheet" href="../Ecommerce - Omega/Css/header/cabecera.css">
+        <link rel="stylesheet" href="../Ecommerce - Omega/Css/header/logo.css">
+        <link rel="stylesheet" href="../Ecommerce - Omega/Css/header/menu/menu.css">
+        <link rel="stylesheet" href="../Ecommerce - Omega/Css/Contacto/Contacto.css">
+        <link rel="stylesheet" href="../Ecommerce - Omega/Css/Footer/Footer.css">
+        
+        
+    </head>
+    <body>
+        <header class="cabecera">
+            <img class="logo" src="../Ecommerce - Omega/Img/logo de omega team.jpg" alt="logo">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link" href="reseñas.html">Reseñas</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html#sobre_nosotros">Quienes Somos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="registro">
+            <form>
+                <div class="contacto">
+                <label for="nombreapellido" class="contacto_item">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+                <label for="correoelectronico" class="contacto_item">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <label for="telefono" class="contacto_item">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX-XXXX">
+                <label for="mensaje" class="contacto_item">Mensaje</label>
+                <textarea cols="70" rows="10" class="input-padron" required></textarea>
+                </div>
+                <fieldset class="tipo_contacto">
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                <fieldset class="horario_contacto">
+                    <legend>¿En cual horario prefiere ser contactado?</legend>
+                    <select class="horario_momento">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+        </main>
+            <footer class="footer" id="footer">
+                <div class="powered__content">
+                    <h1 class="powered__content-text">Powered by OmegaGroup | © 2023</h1>
+                </div>
+            </footer>        
+    </body>
+</html>

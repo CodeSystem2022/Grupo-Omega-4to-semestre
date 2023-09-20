@@ -1,0 +1,28 @@
+.sobre_nosotros__contenido{
+    padding-top: 4.5%;
+    padding-bottom: 3%;
+    text-align: center;
+    border-bottom: 50px solid #024b0c;
+    border-top: 50px solid #024b0c;
+}
+
+.sobre_nosotros__titulo {
+    color:rgb(56, 56, 56) ;
+    font-weight: 700;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.25px;
+}
+
+.sobre_nosotros__texto1{
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.sobre_nosotros__texto{
+    font-size: 20px;
+    padding: 6px 15px;
+    margin: 0px 20px;
+}

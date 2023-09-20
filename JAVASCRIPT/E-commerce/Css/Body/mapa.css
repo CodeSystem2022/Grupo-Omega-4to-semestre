@@ -1,0 +1,21 @@
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white,grey);
+}
+
+.titulo-mapa {
+    color: rgb(56, 56, 56);
+    font-weight: 700;
+    font-size: 45px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.25px;    
+    text-align: center;
+    padding-bottom: 14px
+}
+
+.mapa-contenido {
+    margin: 0 auto;
+    width: 86%;
+    padding: 23px;
+}

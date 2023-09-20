@@ -1,0 +1,62 @@
+/* Resetear margenes y paddings por defecto */
+body, div, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor de imágenes */
+.imagen-container {
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes */
+.imagen-container img {
+    max-width: 50%; 
+    height: 100%;
+    
+}
+
+.imagen-container {
+    display: flex; 
+    gap: 20px; 
+    padding-top: 6%;
+    width: 100%;
+}
+
+/* Estilo para cada imagen con botón */
+.imagen-boton {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Estilo-boton imágenes */
+.imagen-boton img {
+    max-width: 100%; 
+    height: 100%;  
+    cursor: default;  
+    width: 100%;
+}
+
+/* Estilo para los botones */
+.imagen-boton button {
+    position: absolute; 
+    top: 77%; 
+    left: 38%;     
+    padding: 20px 30px;
+    background-color: #0044ff;
+    color: #fff;
+    border: none;    
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;   
+    cursor: pointer;    
+}
+
+button:hover {      
+    transform: scale(1.2);
+    transition: 1s all;  
+    
+}

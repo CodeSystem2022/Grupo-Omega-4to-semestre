@@ -23,6 +23,7 @@
 
 
 
+
 "INTEGRANTES"
 
 -Gaston Riveros
@@ -46,3 +47,13 @@
 ### de productos de alta calidad a travéz de la colaboracion, la comunicacion y la retroalimentacion
 ### continua entre los miembros del equipo,con roles y responsabilidades claras y un enfoque en la 
 ### mejora continua del proceso
+
+#"ULTIMO SEMESTRE"
+
+-SEMANA 1  | JULIETA GUTIERREZ
+-SEMANA 2  | DARIO TAMINI
+-SEMANA 3  |  BELEN RABEL
+-SEMANA 4  |  LEONEL REAL
+-SEMANA 5  |  NICOLAS ABETE
+-SEMANA 6  |  GUSTAVO D'LLAC
+-SEMANA 7  |  GASTON RIVEROS

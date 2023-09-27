@@ -1,3 +1,4 @@
+// boton de javaScript
 productos.froEach((product) =>{
     const content=document.createElement("div");
     content.innerHTML= ´

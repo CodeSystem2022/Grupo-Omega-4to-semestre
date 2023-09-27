@@ -1,0 +1,13 @@
+//Metodo para mostrar el menu
+private static void mostrarMenu(){
+     System.out.print('""
+          *** Sistema de Estudiantes **
+          1. Listar Estudiantes
+          2. Buscar Estudiantes
+         3. Agregar estudiante
+         4. Modificar Estudiante
+         5. Eliminar Estudiante
+         6. Salir
+         Elige una opción:
+        """);
+}

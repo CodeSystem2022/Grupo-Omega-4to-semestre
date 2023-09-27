@@ -5,3 +5,10 @@ const nombre2 = 'Juan'
 console.log(nombre);
 
 console.log('Hola Mundo desde Node');
+
+
+//realizamos mas pruebas en javascript ejecutandolo en la terminal con node
+let nombrePrueba = "Cristian";
+let apellidoPrueba = "Perez";
+console.log("Ejecutando el código en la terminal con node js");
+console.log(`Nombre: ${nombrePrueba} Apellido: ${apellidoPrueba}`);

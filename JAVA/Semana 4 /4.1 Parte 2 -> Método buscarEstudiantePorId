@@ -1,0 +1,5 @@
+@Override
+    public Estudiante buscarEstudiantePorId(Integer IdEstudiante) {
+        Estudiante estudiante = estudianteRepositorio.findById(idEstudiante).orElse(null);
+        return estudiante;
+    }

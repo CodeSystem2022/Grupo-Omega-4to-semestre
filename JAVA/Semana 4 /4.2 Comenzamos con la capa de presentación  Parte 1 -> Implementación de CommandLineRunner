@@ -1,0 +1,23 @@
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
+
+public class EstudiantesApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+	  SpringApplication.run(EstudiantesApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		logger.info("Ejecutar el metodo run de Spring..."+nl);
+		var sallir = false;
+		var consola = new Scanner(System.in);
+		while(!salir){
+			mostrarMenu();
+			salir = ejecutarOpciones(consola);
+			logger.into(nl);
+		}

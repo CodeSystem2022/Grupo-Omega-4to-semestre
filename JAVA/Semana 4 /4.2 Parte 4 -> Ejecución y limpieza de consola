@@ -1,0 +1,15 @@
+String nl = System.lineSeparator();
+
+public static void main(String[] args) {
+    lagger.info("Iniciando la aplicacion...");
+    // levantar la fabrica de Spring
+    SpringApplication.run(EstudiantesApplicaction.class, args);
+    lagger.info("Aplicacion Finalizada!");
+
+}
+@Override
+public void run (String... args) throws Eception{
+    lagger.info(nl+"Ejecutando el metodo run de Spring..."+ nl);
+  }
+
+}

@@ -1,1 +1,13 @@
-
+case 5 -> { //Eliminar estudiante
+   Logger.info("Eliminar estudiante: "+nl);
+   Logger.info("Digite el id estudiante: ");
+   var idEstudiante = Integer.parseInt(consola.nextLine());
+// Buscamos el id estudiante a eliminar
+   var estudiante = estudianteServicio.buscarEstudiantePorId(idEstudiante);
+   if(estudiante != null) {
+      estudianteServicio.eliminarEstudiante (estudiante);
+      Logger.info("Estudiante eliminado: "+estudiante+nl);
+}
+else
+     Logger.info("Estudiante NO encontrado con id: "+estudiante+nl);
+}

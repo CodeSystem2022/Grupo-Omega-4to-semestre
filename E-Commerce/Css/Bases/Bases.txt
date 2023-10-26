@@ -1,0 +1,37 @@
+Para toda la pagina
+Letra: 'Montserrat', sans-serif;
+Color: #024b0c;
+
+Contacto:
+Fondo: #024b0c;
+Boton enviar: orange;
+
+Sobre Nosotros:
+Color Letra Titulo: rgb(56, 56, 56);
+
+Nuestra Ubicacion:
+Color Letra Titulo: rgb(56, 56, 56);
+Fondo: linear-gradient(white,grey);
+
+Inicio: 
+Color Boton: #0044ff; 
+Boton Cabecera Menu: #808080;
+
+Samsung:
+circulitos de color: A14: black; grey; green;
+circulitos de color: XCover 5: black;
+circulitos de color: S22: black; white; pink; green;
+circulitosde color: S23: black; green;
+
+boton carrito: grey / orange
+
+Reseñas:
+Letras y colores
+Reseñas_uno: Permanent Marker, blue;
+Reseñas_dos: Courgette, blueviolet;
+Reseñas_tres: Kaushan Script, coral;
+Reseñas_cuatro: Macondo, cornflowerblue;
+Reseñas_cinco: Gloria Hallelujah, crimson;
+Reseñas_seis: Cookie, darkcyan;
+Reseñas_siete: Marck Script, darkgreen;
+Reseñas_ocho: Leckerli One, deeppink;

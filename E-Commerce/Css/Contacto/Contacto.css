@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.registro{    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* height: 100vh; */
+    margin-top: 106px;
+    background-color: #024b0c;
+    font-family: 'Montserrat', sans-serif;
+    /* padding: 34px 29%; */
+    color: white;
+    padding-top: 100px;
+}
+
+.registro form{
+    width: 500px;
+    margin: 0 10px 40px;
+}
+
+.contacto{
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 39px 26px 39px 26px;
+    border: solid white 2px;
+    border-radius: 30px;
+    width: auto;
+}
+
+.contacto input{
+    width: 100%;
+}
+
+.contacto textarea{
+    width: 100%;
+}
+
+/* .tipo_contacto input{
+    width: 100%;
+} */
+
+.contacto_item{
+    padding-top: 5px;
+    margin: 1px 0px 7px
+}
+
+.tipo_contacto-container{
+    width: 100%;
+}
+
+.tipo_contacto{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: 16px;
+    padding: 11px 39px 19px;
+    border-radius: 17px;
+    border-color: white;
+}
+
+.horario_contacto{
+    text-align: center;
+    padding: 11px 39px 19px;
+    border-radius: 17px;
+    border-color: white;
+}
+
+.horario_momento{    
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 4px 21px;
+}
+
+.enviar-form-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enviar{
+    padding: 12px 65px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 13px;
+    background: orange;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    transform: scale(1.2);
+    transition: 1s all;
+}
+
+
+
+
+
+

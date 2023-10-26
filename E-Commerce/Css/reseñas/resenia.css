@@ -1,0 +1,91 @@
+main{
+    border-radius: 20px;
+    box-shadow: -10px 5px 15px -1px black;
+}
+input[type = "radio"]{ 
+    display:none;
+}
+
+input[type = "radio"]:checked ~ label{
+    color:orange;
+}
+
+p label{ 
+    color:grey;
+}
+
+p label:hover{
+    color:orange;
+}
+
+p label:hover ~ label{
+    color:orange;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form p{
+    text-align: center;
+    width: 48%;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.clasificacion{
+    text-align: left;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 2.5rem;
+}
+
+textarea{
+    resize: none;
+    width: 50%;
+    height: 6.5rem;
+}
+.kk{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.nn, .jj{
+    margin: 4px 2px;
+    font-size: 1.5rem;
+}
+
+.nn{
+    display: inline-block;
+    width: 40%;
+}
+
+.mensaje{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+form button{
+    width: 20%;
+    margin: 1.2rem;
+}
+
+.enviar_resenia{
+    border-bottom: 2px dashed black;
+}
+.reseña{
+    margin-top: 0;
+}
+.resenia{
+    height: 50vh;
+    overflow-y: scroll;
+}

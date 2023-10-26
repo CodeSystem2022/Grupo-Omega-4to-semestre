@@ -1,0 +1,74 @@
+@media screen and (max-width: 800px) {
+    .menu{
+        display: none;
+    }
+
+    .icon-container{
+        margin-right: 50px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bars-icon{
+        display: block;
+    }
+
+    .imagen-container{
+        flex-direction: column;
+    }
+
+    .imagen-boton img{
+        width: 100vw;
+    }
+
+    .imagen-boton button{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sobre_nosotros__contenido{
+        height: 650px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .powered__content-text{
+        font-size: 1.1rem;
+    }
+
+    .lista-menu-icon-container{
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .sobre_nosotros__contenido{
+        height: 750px;
+    }
+
+    .sobre_nosotros__titulo{
+        font-size: 28px;
+    }
+
+    .sobre_nosotros__texto1{
+        font-size: 20px;
+    }
+
+    .sobre_nosotros__texto{
+        font-size: 1.3rem;
+    }
+
+    .titulo-mapa{
+        font-size: 28px;
+    }
+}
+

@@ -1,0 +1,31 @@
+.padre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.sobre_nosotros{
+    width: 100%;
+}
+.y{
+    width: 100%;
+    text-align: center;
+}
+.x{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 5px;
+
+}
+.v{
+    width: 10rem;
+}
+

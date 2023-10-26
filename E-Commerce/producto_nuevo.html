@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head> 
+    <meta charset="UTF-8">
+    <title>Admin - Grupo Omega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./Css/Bases/bases.css">
+    <link rel="stylesheet" href="./Css/header/cabecera.css">
+    <link rel="stylesheet" href="./Css/header/logo.css">
+    <link rel="stylesheet" href="./Css/header/menu/menu.css">
+    <link rel="stylesheet" href="./Css/Body/imagenes.css">
+    <link rel="stylesheet" href="./Css/Nosotros/Nosotros.css">
+    <link rel="stylesheet" href="./Css/Body/mapa.css">
+    <link rel="stylesheet" href="./Css/Contacto/Contacto.css">
+    <link rel="stylesheet" href="./Css/Footer/Footer.css">
+    <link rel="stylesheet" href="./Css/scroll-bar/scroll-bar.css">
+    <link rel="stylesheet" href="./Css/responsive/responsive.css">
+    <link rel="stylesheet" href="./Css/altap.css">
+    <script src="https://kit.fontawesome.com/ba8277beb3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="./js/menu.js"></script>
+</head>
+<body>
+    <div id="app">
+    <navegacion2></navegacion2>
+    <main class="administrador">
+            
+        <div class="cuerpito">
+            <form class="form">
+             <h1 class="formt">Alta de Producto</h1>
+             <div class="formc">
+                <div class="mb-3 formi">
+                    <label class="fl" for="marca">Marca</label>
+                    <select class="fi" name="marca" id="marca" placeholder=" ">
+                        <option value="">--Seleccione Marca--</option>
+                        <option value="Motorola">Motorola</option>
+                        <option value="Samsung">Samsung</option>
+                    </select>
+                  </div>
+             <div class="mb-3 formi">
+               <label class="fl" for="nombre">Nombre</label>
+               <input class="fi" type="text" name="nombre" id="nombre" placeholder=" ">
+             </div>
+             <div class="mb-3 formi">
+               <label class="fl" for="precio">Precio</label>
+               <input class="fi" type="number" name="precio" id="precio">
+             </div>
+             <div class="mb-3 formi">
+               <label class="fl" for="stock">Stock</label>
+               <input  class="fi" type="number" name="stock" id="stock">
+             </div>
+             <div class="mb-3 formi">
+                <label class="fl" for="pantalla">Pantalla</label>
+                <input class="fi" type="text" name="pantalla" id="pantalla" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="procesador">Procesador</label>
+                <input class="fi" type="text" name="procesador" id="procesador" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="camara_frontal">Camar Frontal</label>
+                <input class="fi" type="text" name="camara_frontal" id="camara_frontal" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="camara_trasera">Camara Trasera</label>
+                <input class="fi" type="text" name="camara_trasera" id="camara_trasera" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="bateria">Bateria</label>
+                <input class="fi" type="number" name="bateria" id="bateria" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="sistema">Sistema</label>
+                <input class="fi" type="text" name="sistema" id="sistema" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="perfil">Perfil</label>
+                <input class="fi" type="text" name="perfil" id="perfil" placeholder=" ">
+              </div>
+              <div class="mb-3 formi">
+                <label class="fl" for="peso">Peso</label>
+                <input class="fi" type="text" name="peso" id="peso" placeholder=" ">
+              </div>
+             <div class="mb-3 formi">
+                <label class="fl" for="caracteristicas">Caracteristicas</label>
+                <textarea name="caracteristicas" id="caracteristicas" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+             <div class="formc">
+                <div class="mb-3 formi">
+                    <label class="fl" for="ram">Ram</label>
+                    <input class="fi" type="number" name="ram" id="ram" placeholder=" ">
+                  </div>
+                  <div class="mb-3 formi">
+                    <label class="fl" for="almacenamiento">Almacenamiento</label>
+                    <input class="fi" type="number" name="almacenamiento" id="almacenamiento" placeholder=" ">
+                  </div>
+                  <div class="mb-3 formi">
+                    <label class="fl" for="expansion">Expansion</label>
+                    <input class="fi" type="text" name="expansion" id="expansion" placeholder=" ">
+                  </div>
+                <div class="mb-3 formi">
+                    <label class="fl" for="imagen">Imagen Frente</label>
+                    <input class="fi" type="text" name="imagen" id="txtURL">
+                    <img class="prev-img" id="imgPreview" />
+                </div>
+                  <div class="mb-3 formi">
+                    <label class="fl" for="imagen2">Imagen Perfil</label>
+                    <input class="fi" type="text" name="imagen2" id="txtURL2">
+                    <img class="prev-img" id="imgPreview2" />
+                  </div>
+                  <div class="mb-3 formi">
+                    <label class="fl" for="imagen3">Imagen Dorso</label>
+                    <input class="fi" type="text" name="imagen3" id="txtURL3">
+                    <img class="prev-img" id="imgPreview3" />
+                  </div>
+                
+                </div>
+            
+               <button type="button" class="btn btn-success menu__link" onclick="guardar()">Grabar</button>
+           </form>
+         </div>
+        
+    </main>
+    <piesito></piesito>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#txtURL').change(function () {
+              $('#imgPreview').attr('src', $('#txtURL').val())
+            }) 
+          });
+        
+          $(document).ready(function(){
+            $('#txtURL2').change(function () {
+              $('#imgPreview2').attr('src', $('#txtURL2').val())
+            }) 
+          });
+
+          $(document).ready(function(){
+            $('#txtURL3').change(function () {
+              $('#imgPreview3').attr('src', $('#txtURL3').val())
+            }) 
+          });
+    </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/guardar.js"></script>
+</body>
+    
+
+</html>    
+    

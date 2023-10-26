@@ -1,0 +1,27 @@
+.footer{
+    color: azure;
+    border-top: 3px solid white;
+    height: 100px;
+    min-width: 100%;
+}
+
+.powered__content{
+    background: #024b0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.powered__content-text{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.administrador{
+    margin-top: 7%;
+    min-height: 64vh;
+}

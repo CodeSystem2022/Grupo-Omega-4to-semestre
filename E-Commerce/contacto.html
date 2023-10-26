@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Ecommerce - Omega</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Css/Bases/bases.css">
+        <link rel="stylesheet" href="./Css/header/cabecera.css">
+        <link rel="stylesheet" href="./Css/header/logo.css">
+        <link rel="stylesheet" href="./Css/header/menu/menu.css">
+        <link rel="stylesheet" href="./Css/Contacto/Contacto.css">
+        <link rel="stylesheet" href="./Css/Footer/Footer.css">
+        <link rel="stylesheet" href="./Css/scroll-bar/scroll-bar.css">
+        <link rel="stylesheet" href="./Css/responsive/responsive.css">
+        <script src="https://kit.fontawesome.com/ba8277beb3.js" crossorigin="anonymous"></script>
+        <script defer src="./js/menu.js"></script>
+    </head>
+    <body id="app">
+        <navegacion></navegacion>
+        <main class="registro">
+            <form>
+                <div class="contacto">
+                <label for="nombreapellido" class="contacto_item">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+                <label for="correoelectronico" class="contacto_item">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <label for="telefono" class="contacto_item">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX-XXXX">
+                <label for="mensaje" class="contacto_item">Mensaje</label>
+                <textarea cols="70" rows="10" class="input-padron" required></textarea>
+                </div>
+                <div class="tipo_contacto-container">
+                    <fieldset class="tipo_contacto">
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                        
+                    </fieldset>
+                </div>
+                
+                <fieldset class="horario_contacto">
+                    <legend>¿En cual horario prefiere ser contactado?</legend>
+                    <select class="horario_momento">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <div class="enviar-form-button-container">
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                </div>
+            </form>
+        </main>
+        <piesito></piesito>  
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>       
+    </body>
+</html>

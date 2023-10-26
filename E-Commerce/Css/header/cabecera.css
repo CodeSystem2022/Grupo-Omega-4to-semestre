@@ -1,0 +1,14 @@
+.cabecera{
+    align-items: center;
+    background: rgba(48,71,65,.8); /*#024b0ce8*/
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}

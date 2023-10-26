@@ -1,0 +1,188 @@
+#app{
+    width: 100%;
+}
+
+.catalogo{
+    margin-top: 7%;
+    height: 67vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.tablita{
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+th{
+    width: 10rem;
+
+}
+
+td{
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.acciones{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fa-pen-to-square{
+    color: #006666;
+    margin: auto;
+    margin-right: 1rem;
+}
+
+.fa-trash-can{
+    color: #cc0000;
+}
+
+#equipos{
+    height: 68vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria-celu{
+    padding-left: 30px;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+.d-block{
+    height: 45vh;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card{
+  margin-top: 15px;
+  --bs-card-border-radius: 1.375rem;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.btn-dark{
+    --bs-btn-font-weight: bold;
+    --bs-btn-color: black;
+    --bs-btn-bg: orange;
+}
+
+
+/*Ventana Modal*/
+.modal {
+    display: none; /* Por defecto, estará oculto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+  }
+  
+  /* Ventana o caja modal */
+  .contenido-modal {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+  }
+
+  .contenido-modal h2{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Animación */
+  @-webkit-keyframes animatetop {
+    from {top:300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+    from {top:300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* Botón cerrar */
+  .cierre{
+    text-align: right;
+  }
+  .close {
+    color: rgb(244, 17, 17);
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .lista{
+    margin-left: -10%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+}
+
+.img_lista{
+  width: 47%;
+  padding: 25px 18px;
+}
+
+.items div{
+  width: 49%;
+  text-align: center;
+}
+
+.items p{
+  width: 100%;
+  font-weight: bold;
+}
+
+.items spam{
+  text-align: center;
+  width: 100%;
+}
+
+.precio{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  background: orange;
+  border-radius: 25px;
+  padding: 8px 0px 11px;
+  margin: -5px 50px;
+  font-weight: bold;
+}
+
+.precio_texto{
+  display: contents;
+}

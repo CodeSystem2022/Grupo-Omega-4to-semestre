@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reseñas - Grupo Omega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/Bases/bases.css">
+    <link rel="stylesheet" href="./Css/reseñas/reseñas.css">
+    <link rel="stylesheet" href="./Css/header/cabecera.css">
+    <link rel="stylesheet" href="./Css/header/logo.css">
+    <link rel="stylesheet" href="./Css/header/menu/menu.css">
+    <link rel="stylesheet" href="./Css/Footer/Footer.css">
+    <link rel="stylesheet" href="./Css/scroll-bar/scroll-bar.css">
+    <link rel="stylesheet" href="./Css/responsive/responsive.css">
+    <link rel="stylesheet" href="./Css/reseñas/resenia.css">
+    <script src="https://kit.fontawesome.com/ba8277beb3.js" crossorigin="anonymous"></script>
+    <script defer src="./js/menu.js"></script>
+
+    <!--Sweet Alert-->
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <div id="app">
+        <navegacion></navegacion>
+        <main>
+            <section class="enviar_resenia">
+                <div>
+                    <form name="enviar-reseñas">
+                        <p>Califiquenos</p>
+                        <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="5" ><!--
+                          --><label for="radio1">★</label><!--
+                          --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                          --><label for="radio2">★</label><!--
+                          --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                          --><label for="radio3">★</label><!--
+                          --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                          --><label for="radio4">★</label><!--
+                          --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                          --><label for="radio5">★</label>
+                        </p>
+                        <div class="kk">
+                                <label class="nn " for="nombre" class="contacto_item">Nombre</label>
+                            <input type="text" name="nombre" class="jj " placeholder="Su nombre" required>
+    
+                            <label class="nn" for="apellido" class="contacto_item" >Apellido</label>
+                            <input type="text" name="apellido" class="jj" placeholder="Su apellido" required>
+    
+                            <label for="resenia" class="mensaje">Mensaje</label>
+                            <textarea name="resenia" maxlength="200" placeholder="Maximo 200 caracteres" required></textarea>
+                        </div>
+                        
+                        <button type="sumbit" class="menu__link menu__item">Enviar</button>
+
+                        <button type="button" class="menu__link menu__item" id="limpiar">Limpiar</button>
+                    </form>
+                </div>
+            </section>
+    
+            <section class="resenia" id="resenia">
+                
+                
+            </section>
+            
+        </main>
+        <piesito></piesito>  
+    </div>
+   
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/resenias.js"></script>
+</body>
+</html>

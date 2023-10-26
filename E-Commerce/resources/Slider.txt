@@ -1,0 +1,65 @@
+HTML
+
+<section class="samsung_a14">
+<div class="slider">
+    <ul class="lista_samsung">
+        <li class="lista_item"><img class="lista_imagen" src="../Ecommerce - Omega/Img/Samsung A14 1.JPG" alt="Samsung foto1"></li>
+        <li class="lista_item"><img class="lista_imagen" src="../Ecommerce - Omega/Img/Samsung A14 2.JPG" alt="Samsung foto2"></li>
+        <li class="lista_item"><img class="lista_imagen" src="../Ecommerce - Omega/Img/Samsung A14 3.JPG" alt="Samsung foto3"></li>
+        <li class="lista_item"><img class="lista_imagen" src="../Ecommerce - Omega/Img/Samsung A14 4.JPG" alt="Samsung foto4"></li>
+    </ul>
+</div>
+</section>
+
+CSS
+
+
+.samsung_a14{
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    padding-top: 11%;    
+    margin: 0;
+}
+
+.slider{
+    width: 50%;
+    height: auto;
+    margin: auto 0; /* Centro el slider horizontalmente */
+    overflow: hidden;
+    
+}
+
+.lista_samsung{
+    display: flex;
+    padding: 0;
+    width: 400%; /* Ajusta este valor según la cantidad de imágenes */
+    animation: slider 20s infinite alternate ease-in-out;
+}
+
+.lista_item{
+    list-style: none;
+    width: 25%; /* Calcula el ancho en función de la cantidad de imágenes */
+}
+
+.lista_imagen{
+    width: 100%;
+
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+      

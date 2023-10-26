@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head> 
+    <meta charset="UTF-8">
+    <title>Admin - Grupo Omega</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
+
+    <link rel="stylesheet" href="./Css/Bases/bases.css">
+    <link rel="stylesheet" href="./Css/header/cabecera.css">
+    <link rel="stylesheet" href="./Css/header/logo.css">
+    <link rel="stylesheet" href="./Css/header/menu/menu.css">
+    <link rel="stylesheet" href="./Css/Body/imagenes.css">
+    <link rel="stylesheet" href="./Css/Nosotros/Nosotros.css">
+    <link rel="stylesheet" href="./Css/Body/mapa.css">
+    <link rel="stylesheet" href="./Css/Contacto/Contacto.css">
+    <link rel="stylesheet" href="./Css/Footer/Footer.css">
+    <link rel="stylesheet" href="./Css/scroll-bar/scroll-bar.css">
+    <link rel="stylesheet" href="./Css/responsive/responsive.css">
+    <link rel="stylesheet" href="./Css/Bases/catalogo.css">
+    <script src="https://kit.fontawesome.com/ba8277beb3.js" crossorigin="anonymous"></script>
+    <script defer src="./js/menu.js"></script>
+</head>
+<body>
+    <div id="app">
+        <navegacion2></navegacion2>
+      
+        <main class="catalogo">
+          <div  class="container">
+            <h1>Productos</h1>
+            <section v-if="error">
+              <p>Lo sentimos, no podemos mostrarte los datos solicitados en este momento</p>
+            </section>
+            <section v-else>
+              <section v-if="cargando">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="spinner-border text-primary spinner-border-sm"
+                    role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </section>
+              <section class="innf" v-else>
+                <a class="menu__link menu__item" href="producto_nuevo.html">Agregar Producto</a>
+      
+            <div class="table-responsive" style="margin-top: 1rem;">
+              <table class="table table-bordered tablita">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Pantalla</th>
+                    <th scope="col">Procesador</th>
+                    <th scope="col">Ram</th>
+                    <th scope="col">Almacenamiento</th>
+                    <th scope="col">Expansion</th>
+                    <th scope="col">C_Frontal</th>
+                    <th scope="col">C_Trasera</th>
+                    <th scope="col">Bateria</th>
+                    <th scope="col">OS</th>
+                    <th scope="col">Perfil</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Caracteristicas</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Imagen 2</th>
+                    <th scope="col">Imagen 3</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="p in productos">
+                    <td scope="row">{{p.id}}</td>
+                    <td>{{p.marca}}</td>
+                    <td>{{p.nombre}}</td>
+                    <td>{{p.precio}}</td>
+                    <td>{{p.stock}}</td>
+                    <td>{{p.pantalla}}</td>
+                    <td>{{p.procesador}}</td>
+                    <td>{{p.ram}}</td>
+                    <td>{{p.almacenamiento}}</td>
+                    <td>{{p.expansion}}</td>
+                    <td>{{p.camara_frontal}}</td>
+                    <td>{{p.camara_trasera}}</td>
+                    <td>{{p.bateria}}</td>
+                    <td>{{p.sistema}}</td>
+                    <td>{{p.perfil}}</td>
+                    <td>{{p.peso}}</td>
+                    <td height="80">{{p.caracteristicas}}</td>
+                    <td>
+                      <img :src="p.imagen" :alt="p.nombre" width="80" height="80">
+                    </td>
+                    <td>
+                        <img :src="p.imagen2" :alt="p.nombre" width="80" height="80">
+                      </td>
+                      <td>
+                        <img :src="p.imagen3" :alt="p.nombre" width="80" height="80">
+                      </td>
+                    <td class="acciones">
+                      <a :href="'producto_editar.html?id='+p.id+'&nombre='+p.nombre+'&precio='+p.precio+'&stock='+p.stock+'&imagen='+p.imagen+'&imagen2='+p.imagen2+'&imagen3='+p.imagen3+'&expansion='+p.expansion+'&camara_frontal='+p.camara_frontal+'&camara_trasera='+p.camara_trasera+'&peso='+p.peso+'&ram='+p.ram+'&almacenamiento='+p.almacenamiento+'&sistema='+p.sistema+'&perfil='+p.perfil+'&procesador='+p.procesador+'&pantalla='+p.pantalla+'&caracteristicas='+p.caracteristicas+'&bateria='+p.bateria+'&marca='+p.marca"><i class="fa-regular fa-pen-to-square"></i></a>
+                      
+                      <i class="fa-solid fa-trash-can" v-on:click="eliminar(p.id)"></i>
+                      
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+      
+              </section>
+            </section>
+            
+            
+          </div>
+        </main>
+      
+        <piesito></piesito>
+      </div>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

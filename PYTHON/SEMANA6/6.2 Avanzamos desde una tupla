@@ -1,0 +1,5 @@
+# dar formato a un string 
+nombre = " gaston"
+edad = 32
+mensaje_con formato = " Hola %$ %$,. Tu sueldo es %.2f" # % persona # Aqui le pasamos el objeto  que es una tupla
+print(mensaje_com_formato % persona)

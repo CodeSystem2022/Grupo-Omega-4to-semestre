@@ -1,1 +1,12 @@
+    //Para obtener las dimenciones de la ventana
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Dimension tamanioPantalla = toolkit.getToolkit().getScreenSize();
+        int x = (tamanioPantalla.width - getWidth()/2);
+        int y = (tamanioPantalla.height - getHeight()/2);
+        setLocation(x,y);
 
+    }
+   public static void main(String[] args) {
+
+        ConfigurableApplicationContext contextoSpring =
+                new SpringApplicationBuilder(TiendaLibrosApplication.class)

@@ -1,0 +1,20 @@
+private void listarLibros(){
+        // limpiar la tabla
+        tablaModeloLibros.setRowCount(0);
+        // obtener los libros de la BD
+        var libros = libroServicio.listarLibros();
+        // iteramos cada libro
+        libros.forEach((libro) -> {// funcion lamda
+            // creamos cada registro para agregarlos a la tabla
+            Object [] renglonLibro= {
+                    libro.getIdlibro(),
+                    libro.getNombreLibro(),
+                    libro.getAutor(),
+                    libro.getPrecio(),
+                    libro.getExistencias()
+            };
+            this.tablaModeloLibros.addRow(renglonLibro);
+
+        });
+    }
+}

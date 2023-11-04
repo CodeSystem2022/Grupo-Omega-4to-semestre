@@ -1,0 +1,13 @@
+Function hola(nombre,miCallback){
+       setTimeout( function () {
+            conosole.log("hola"+nombre);
+            miCallback(nombre);
+        }, 1000);
+}
+
+Function hablar(callbackHablar){
+       setTimeout( function () {
+            conosole.log("bla bla bla bla");
+            callbackHablar();
+        }, 1000);
+}

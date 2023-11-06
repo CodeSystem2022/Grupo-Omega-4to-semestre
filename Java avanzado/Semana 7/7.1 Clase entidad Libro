@@ -1,0 +1,8 @@
+public class Libro {
+    @GenerateValie(strategy = GenerationType.IDENTITY);
+    Interger idLibro;
+    String NOMBRElIBRO;
+    String autor;
+    Double precio;
+    Interger existencias;
+}

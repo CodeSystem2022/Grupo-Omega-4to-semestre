@@ -1,0 +1,13 @@
+      //Lenamos el objetolibro a actualizar
+        int idLibro = Integer.parseInt(idTexto.getText());
+        var nombreLibro = libro.getText();
+        var autor = autorTexto.getText();
+        var precio = Double.parseDouble(precioTexto.getText());
+        var existencias = Integer.parseInt(existenciasTexto.getTexto());
+        var libro = new Libro(idLibro, nombreLibro, autor, precio, existencias);
+        libroServicio.guardarLibro(libro);
+        mostrarMensaje("Se modifico el libro...");
+        limpiarFormulario();
+        listarLibros();
+
+    }

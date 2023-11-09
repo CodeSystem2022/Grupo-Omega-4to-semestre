@@ -1,0 +1,7 @@
+private void agregarLibro(){...}
+        private void cargarLibroSeleccionado(){
+            // los indices de las columnas inician en 0
+            var renglon = tablaLibros.getSelectedRow();
+            if (renglon != -1){
+                String idLibro = tablaLibros.getModel().getValueAt(renglon,0).toString();
+            }

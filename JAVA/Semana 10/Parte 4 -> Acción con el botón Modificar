@@ -1,0 +1,17 @@
+private void iniciarForma(){....}
+
+private void agregarLibro(){...}
+
+private void cargarLibroSeleccionado(){...}
+
+private void modificarLibro(){
+    if(this.idTextoequals("")){
+        mostrarMensaje("Debes seleccionar un registro en la tabla");
+    }
+    else{
+        //Verificamos que nombre del libro no sea nulo
+        if (libroTexto.RequestFocusInwindow()){
+            return;
+        }
+    }
+}

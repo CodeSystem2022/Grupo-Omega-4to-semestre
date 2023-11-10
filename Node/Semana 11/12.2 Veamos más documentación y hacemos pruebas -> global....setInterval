@@ -1,0 +1,18 @@
+async  function adios(nombre){
+    return now Promise( ( resolve, reject)) => {
+        setTimeout ( function()) {
+            // validamos el error o aprobacion
+            console.log ('Adios' + nombre );
+            //if (err) reject ('Hay un error');
+            resolve();
+        }, 1000);
+    }
+    // await hola('Ariel');
+}
+async function main(main){
+    let nombre = await hola('Ariel);
+    await hablar();
+    await hablar();
+    await hablar();
+    await adios(nombre);
+}

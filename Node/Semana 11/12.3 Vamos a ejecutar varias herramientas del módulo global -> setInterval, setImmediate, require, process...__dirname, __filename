@@ -1,0 +1,18 @@
+let i = 0;
+let intervalo = setInterval(() => {
+    console.log("Hola");
+    if(i === 3){
+        clearInterval(intervalo);
+    }
+    i++;
+}, 1000);
+
+setInmediate(() => {
+    console.log("Saludo inmediato");
+});
+
+//require();
+
+console.log(process);
+console.log(__dirname);
+console.log(__filename);
